@@ -15,10 +15,10 @@
     "levelup": "0.16.0",
     "leveldown": "0.8.2",
     "memdown": "0.3.0",
-    "request": "2.27.0",
+    "request": "2.50.0",
     "fibers": "1.0.1",
     "phantom-wd-runner": "0.0.2",
-    "wd": "0.1.4",
+    "wd": "0.3.12",
     "cheerio": "0.12.2",
     "tap-prettify": "0.0.2"
   },
