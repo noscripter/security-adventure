@@ -15,15 +15,18 @@
     "levelup": "0.16.0",
     "leveldown": "0.8.2",
     "memdown": "0.3.0",
-    "request": "2.27.0",
+    "request": "2.81.0",
     "fibers": "1.0.1",
     "phantom-wd-runner": "0.0.2",
-    "wd": "0.1.4",
+    "wd": "1.6.2",
     "cheerio": "0.12.2",
-    "tap-prettify": "0.0.2"
+    "tap-prettify": "0.0.2",
+    "snyk": "^1.104.2"
   },
   "scripts": {
-    "test": "node node_modules/tap-prettify/bin/tap-prettify.js test/*.js test/solutions/*.js --stderr --timeout 60"
+    "test": "node node_modules/tap-prettify/bin/tap-prettify.js test/*.js test/solutions/*.js --stderr --timeout 60",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "security",
@@ -42,5 +45,6 @@
     "type": "git",
     "url": "git://github.com/toolness/security-adventure.git"
   },
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "snyk": true
 }
